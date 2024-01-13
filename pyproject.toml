@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "cv-gpt-app"
+version = "0.1.0"
+description = "Chat with my CV"
+authors = ["Minh Nguyen <“minh.nguyen@paragonintelligence.co.uk”>"]
+readme = "README.md"
+packages = [{include = "cv_gpt_app"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+huggingface = "^0.0.1"
+transformers = "^4.34.1"
+langchain = "^0.0.325"
+gradio = "^3.50.2"
+chromadb = "^0.4.15"
+tiktoken = "^0.5.1"
+pypdf = "^3.17.0"
+sentence-transformers = "^2.2.2"
+faiss-cpu = "^1.7.4"
+black = "^23.10.1"
+isort = "^5.12.0"
+llama-index = "^0.8.56"
+loguru = "^0.7.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
